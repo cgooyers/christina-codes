@@ -1,0 +1,227 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'variables';
+@import 'fullpage';
+@import 'typography';
+@import 'hamburger-menu';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: none;
+	font-family: 'Lato', sans-serif;
+}
+
+span.highlight {
+	background: $yellow;
+}
+
+.container {
+
+	margin: 0 auto;
+}
+.home-sections {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.section-content {
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 15px 10px;
+	text-align: center;
+	p {
+		font-size: 14px;
+		text-align: left;
+		text-transform: capitalize;
+		line-height: 28px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	span {
+		font-weight: 600;
+	}
+	i {
+		font-size: 55px;
+	}
+}
+
+.section-content {
+	opacity: 0;
+	transition: all .3s ease;
+	&.show {
+		opacity: 1;
+		transition: all .3s ease;
+	}
+
+}
+
+
+section.content, section {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	margin: 0;
+	padding: 0 2% 0 2%;
+	overflow: hidden;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	h2, a {
+		font-size: 3rem;
+		color: black;
+		margin-bottom: -17px;
+		padding: 0;
+		line-height: 70px;
+		letter-spacing: 2px;
+	}
+	a {
+		position: absolute;
+		bottom: 0;
+		left: 3%;
+		i.fa-angle-right {
+			margin-left: 15px;
+			font-size: 52px;
+		}
+	}
+}
+
+.section-container {
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	.title-info {
+
+		h1 {
+			margin: 0;
+		}
+	}
+}
+
+.work-container {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 12px;
+	text-align: left;
+	font-weight: 300;
+	h1 {
+		font-size: 13px;
+		background: $yellow;
+
+	}
+	p {
+		line-height: 20px;
+		margin: 10px 0;
+
+
+	}
+	h1 {
+		padding: 0;
+		margin: 0;
+	}
+	button {
+		border: 2px solid $yellow;
+		border-radius: 5px;
+		height: 25px;
+		padding: 0 5px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 10px;
+		letter-spacing: 1px;
+		background: white;
+	}
+	&.right-work {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		img {
+
+		}
+	}
+	.image-text {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		width: 50%;
+		text-align: left;
+		background-color: $yellow;
+	}
+	.image-container {
+		width: 50%;
+	}
+}
+
+
+.full {
+	width: 100%;
+}
+
+
+.main-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow:hidden;
+	padding: 12px 15px 20px 0;
+	z-index: 100;
+
+	img {
+		display: inline-block;
+		position: relative;
+		z-index: 15;
+		padding: 5px 0 0 4%;
+
+
+	}
+}
+
+iframe#wufooFormzyecgec0vkygl2 {
+	#container {
+		#form1 {
+			header#header {
+				h2 {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+
+//FOOTER STYLES
+footer {
+	background: white;
+	color: black;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: 10px 0;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,31 @@
+ul.menu {
+	padding: 0 10px;
+	display: flex;
+    justify-content: flex-end;
+    margin: 15px 100px 0 0;
+    transition: all 0.3s ease;
+	li {
+		padding: 3px 20px 0 10px;
+		margin-right: 10px;
+		text-transform: uppercase;
+		transition: all 0.2s ease;
+
+		
+		a {
+			transition: all 0.2s ease;
+			font-size: 13px;
+			padding: 10px;
+			color: black;
+		}
+	}
+	li,
+	a {
+		
+		display: inline-block;
+	}
+	a:hover {
+		background: $yellow;
+		transition: all 0.2s ease;
+	}
+}
+
